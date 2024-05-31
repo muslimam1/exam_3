@@ -1,0 +1,136 @@
+.fleet{
+    padding-top: 136px;
+}
+
+.fleet__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fleet__content{
+    width: 448px;
+}
+
+.fleet__title{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #888D9E;
+    margin-bottom: 16px;
+}
+
+.fleet__subtitle{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    color: #23262F;
+    margin-bottom: 32px;
+}
+
+.fleet__name{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777E90;
+    margin-bottom: 40px;
+}
+
+
+.fleet__btn{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #777E90;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #E6E8EC;
+    background-color: #fff;
+    border-radius: 90px;
+    width: 300px;
+    transition: .45s;
+    margin-bottom: 48px;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:active{
+        transform: scale(.95);
+        background-color: azure;
+    }
+
+    &::after{
+        content: " ";
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin-left: 30%;
+        background-repeat: no-repeat;
+        background-image: url('../img/fleet-btn.png');
+        background-position:  right;
+    }
+}
+
+.fleet__mobile{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .fleet__img{
+        display: none;
+    } 
+
+    .fleet__mobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .fleet__content{
+        width: 348px;
+    }
+
+    .fleet__name{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .fleet__block{
+        display: contents;
+    }
+
+    .fleet__btn{
+        width: 300px;
+    }
+
+    .fleet__content{
+        text-align: start;
+        width: 288px;
+    }
+
+    .fleet__name{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .fleet__name{
+        width: 278px;
+    }
+
+    .fleet__content{
+        width: 258px;
+    }
+
+    .fleet__btn{
+        font-weight: 380;
+        font-size: 12px;
+        line-height: 161%;
+        width: 280px;
+    }
+}

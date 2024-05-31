@@ -1,0 +1,43 @@
+.feedback__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback {
+  margin: 20px;
+}
+.feedback__box {
+  overflow: auto;
+  padding-bottom: 20px;
+}
+.feedback__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+.feedback__card {
+  width: 400px;
+  min-width: 400px;
+  height: 330px;
+}
+
+@media (min-width: 1200px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3B71FE;
+    border-radius: 50px;
+  }
+  .feedback__box::-webkit-scrollbar {
+    height: 2px;
+  }
+  .feedback__box::-webkit-scrollbar-thumb {
+    background: #3B71FE;
+  }
+}/*# sourceMappingURL=feedback.css.map */
