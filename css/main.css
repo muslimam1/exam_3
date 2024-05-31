@@ -1218,6 +1218,7 @@ body {
 }
 .location {
   margin-top: 136px;
+  border-bottom: 2px solid #F4F5F6;
 }
 
 .location__title {
@@ -1245,6 +1246,7 @@ body {
   border-radius: 24px;
   background-color: #fff;
   padding: 32px;
+  margin-bottom: 10px;
 }
 
 .location__num {
@@ -1279,6 +1281,7 @@ body {
 .location__arrow {
   text-align: center;
   margin-top: 64px;
+  margin-bottom: 137px;
 }
 
 .feedback {
@@ -1341,6 +1344,9 @@ body {
     font-size: 20px;
     line-height: 100%;
   }
+  .location__card {
+    margin-top: 15px;
+  }
 }
 @media screen and (max-width: 410px) {
   .location__title {
@@ -1354,5 +1360,108 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
+  }
+}
+.footer {
+  margin-top: 80px;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #F4F5F6;
+}
+
+.footer__logo {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #23262F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__logo::before {
+  content: " ";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-image: url("../img/logo.png");
+  background-position: left;
+}
+
+.footer__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+  color: #989EAB;
+  margin-bottom: 32px;
+}
+.footer__name:hover {
+  color: #3B71FE;
+}
+
+.footer__word {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #23262F;
+}
+
+.footer__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  border: 2px solid #989EAB;
+  border-radius: 90px;
+  padding: 6px;
+  width: 250px;
+  height: 48px;
+}
+
+.footer__email {
+  outline: none;
+  border: none;
+  border-radius: 90px;
+  padding: 10px 8px;
+}
+
+.footer__words {
+  margin-top: 25px;
+  padding-bottom: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: #23262F;
+}
+
+@media screen and (max-width: 970px) {
+  .footer__name {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer__body {
+    display: block;
+  }
+  .footer__word {
+    margin-top: 32px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,6 @@
 .location{
     margin-top: 136px;
+    border-bottom: 2px solid #F4F5F6;
 }
 
 .location__title{
@@ -27,6 +28,7 @@
     border-radius: 24px;
     background-color: #fff;
     padding: 32px;
+    margin-bottom: 10px;
 }
 
 .location__num{
@@ -61,6 +63,7 @@
 .location__arrow{
     text-align: center;
     margin-top: 64px;
+    margin-bottom: 137px;
 }
 
 .feedback{
@@ -129,6 +132,10 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 100%;
+    }
+
+    .location__card{
+        margin-top: 15px;
     }
 }
 
